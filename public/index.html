@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hossein-Noor-Ramsis" />
+
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="./Source/Image/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="./Source/Image/favicon.ico" />
+
+    <link rel="stylesheet" href="../src/styles/app.css" />
+  </head>
+  <body
+    class="container bg-[url('../assets/image/background.jpg')] w-screen h-screen bg-no-repeat bg-center bg-cover"
+  >
+    <header>
+      <!-- ==================== navbar ==================== -->
+      <nav class="flex justify-around items-center text-white m-4">
+        <div class="">
+          <a class="font-extrabold text-3xl" href="#">Logo</a>
+        </div>
+        <div>
+          <ul class="flex justify-around gap-8">
+            <li class="nav-item">
+              <a class="underline-effect hidden sm:block" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline-effect hidden sm:block" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline-effect hidden sm:block" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="underline-effect hidden sm:block" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                id="open-login"
+                class="py-2 px-5 border-2 border-white rounded-md hover:bg-white transition-colors hover:text-black"
+                href="#"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="content" class="flex justify-center items-center">
+      <!-- ==================== Login & Registration ==================== -->
+      <section
+        id="login-registration"
+        class="relative flex justify-start items-center overflow-hidden text-sky-950 w-80 h-96 border-2 border-white rounded-2xl py-2 backdrop-blur-lg"
+      >
+        <!-- ===== login ===== -->
+        <form
+          class="flex flex-col justify-around items-center h-full w-[320px] p-9 transition-transform"
+          action=""
+          id="login"
+        >
+          <h2 class="text-center font-bold text-2xl">Login</h2>
+          <!-- Email -->
+          <div class="relative">
+            <input
+              id="email"
+              class="peer/email bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              type="email"
+              required
+            />
+            <label
+              class="absolute left-0 peer-focus/email:-translate-y-4 peer-[:user-invalid]/email:-translate-y-4 peer-valid/email:-translate-y-4 transition-transform"
+              for="email"
+            >
+              Email
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 absolute right-0 -top-1"
+            >
+              <path
+                d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"
+              />
+              <path
+                d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"
+              />
+            </svg>
+          </div>
+          <!-- Password -->
+          <div class="relative">
+            <input
+              id="password"
+              class="peer/pass bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              type="password"
+              required
+            />
+            <label
+              class="absolute left-0 peer-focus/pass:-translate-y-4 peer-valid/pass:-translate-y-4 transition-transform"
+              for="password"
+            >
+              Password
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 absolute right-0 -top-1"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <!-- Remember & Forgot -->
+          <div class="flex flex-row justify-between gap-5">
+            <label class="text-sm"><input type="checkbox" /> Remember me</label>
+            <a class="text-sm hover:underline" href="#">Forgot Password?</a>
+          </div>
+          <!-- Submit -->
+          <div class="flex items-center w-full">
+            <input
+              class="block w-full p-2 bg-sky-950 hover:bg-sky-900 transition-colors text-white rounded"
+              type="submit"
+              value="Login"
+            />
+          </div>
+          <!-- Register -->
+          <div>
+            <p>
+              Don't have an account?
+              <a id="register-link" class="hover:underline" href="#"
+                >Register</a
+              >
+            </p>
+          </div>
+        </form>
+
+        <!-- ===== Registration ===== -->
+        <form
+          class="flex flex-col justify-around items-center h-full p-9 pl-px transition-transform"
+          action=""
+          id="registration"
+        >
+          <h2 class="text-center font-bold text-2xl">Registration</h2>
+          <!-- Username -->
+          <div class="relative">
+            <input
+              id="username"
+              class="peer/username bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              type="text"
+              required
+            />
+            <label
+              class="absolute left-0 peer-focus/username:-translate-y-4 peer-valid/username:-translate-y-4 transition-transform"
+              for="username"
+            >
+              Username
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 absolute right-0 -top-1"
+            >
+              <path
+                d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z"
+              />
+            </svg>
+          </div>
+
+          <!-- Email -->
+          <div class="relative">
+            <input
+              id="reg-email"
+              class="peer/email bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              type="email"
+              required
+            />
+            <label
+              class="absolute left-0 peer-focus/email:-translate-y-4 peer-[:user-invalid]/email:-translate-y-4 peer-valid/email:-translate-y-4 transition-transform"
+              for="reg-email"
+            >
+              Email
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 absolute right-0 -top-1"
+            >
+              <path
+                d="M3 4a2 2 0 0 0-2 2v1.161l8.441 4.221a1.25 1.25 0 0 0 1.118 0L19 7.162V6a2 2 0 0 0-2-2H3Z"
+              />
+              <path
+                d="m19 8.839-7.77 3.885a2.75 2.75 0 0 1-2.46 0L1 8.839V14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.839Z"
+              />
+            </svg>
+          </div>
+          <!-- Password -->
+          <div class="relative">
+            <input
+              id="reg-password"
+              class="peer/pass bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              type=""
+              required
+            />
+            <label
+              class="absolute left-0 peer-focus/pass:-translate-y-4 peer-valid/pass:-translate-y-4 transition-transform"
+              for="reg-password"
+            >
+              Password
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="size-4 absolute right-0 -top-1"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <!-- Agree Terms -->
+          <div class="text-left w-full">
+            <label class="text-sm text-left"
+              ><input type="checkbox" /> I agree the terms & conditions</label
+            >
+          </div>
+          <!-- Submit -->
+          <div class="flex items-center w-full">
+            <input
+              class="block w-full p-2 bg-sky-950 hover:bg-sky-900 transition-colors text-white rounded"
+              type="submit"
+              value="Register"
+            />
+          </div>
+          <!-- Login -->
+          <div>
+            <p>
+              Already have an account?
+              <a id="login-link" class="hover:underline" href="#">Login</a>
+            </p>
+          </div>
+        </form>
+
+        <!-- ===== Close Btn ===== -->
+        <button
+          id="close-btn"
+          class="absolute top-0 right-0 w-10 h-10 row-span-4 bg-sky-950 hover:bg-sky-900 transition-colors rounded-bl-2xl flex justify-center items-center"
+          type="button"
+          aria-label="close the form"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-7 text-white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <!-- ==================== footer ==================== -->
+    </footer>
+    <script src="../src/JavaScript/index.js"></script>
+  </body>
+</html>
