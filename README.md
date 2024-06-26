@@ -1,6 +1,6 @@
 <h1>Login & Registration page</h1>
 <p>
-  I created this login page whith html, css, tailwind and js
+  I created this login page with html, css, tailwind and js
 </p>
 
 <br>
