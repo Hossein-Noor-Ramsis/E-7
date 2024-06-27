@@ -50,11 +50,11 @@
       <!-- ==================== Login & Registration ==================== -->
       <section
         id="login-registration"
-        class="relative flex justify-start items-center overflow-hidden text-sky-950 w-80 h-96 border-2 border-white rounded-2xl py-2 backdrop-blur-lg"
+        class="-translate-y-8 relative flex justify-start items-center overflow-hidden text-sky-950 w-80 h-96 border-2 border-white rounded-2xl py-2 backdrop-blur-lg"
       >
         <!-- ===== login ===== -->
         <form
-          class="flex flex-col justify-around items-center h-full w-[320px] p-9 transition-transform"
+          class="flex flex-col justify-around items-center h-full w-80 p-8 transition-transform"
           action=""
           id="login"
         >
@@ -63,7 +63,7 @@
           <div class="relative">
             <input
               id="email"
-              class="peer/email bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              class="peer/email bg-transparent w-60 p-2 border-b-2 border-sky-950 outline-none"
               type="email"
               required
             />
@@ -91,7 +91,7 @@
           <div class="relative">
             <input
               id="password"
-              class="peer/pass bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              class="peer/pass bg-transparent w-60 p-2 border-b-2 border-sky-950 outline-none"
               type="password"
               required
             />
@@ -115,7 +115,7 @@
             </svg>
           </div>
           <!-- Remember & Forgot -->
-          <div class="flex flex-row justify-between gap-5">
+          <div class="flex justify-between w-full">
             <label class="text-sm"><input type="checkbox" /> Remember me</label>
             <a class="text-sm hover:underline" href="#">Forgot Password?</a>
           </div>
@@ -128,7 +128,7 @@
             />
           </div>
           <!-- Register -->
-          <div>
+          <div class="w-full text-center">
             <p>
               Don't have an account?
               <a id="register-link" class="hover:underline" href="#"
@@ -140,7 +140,7 @@
 
         <!-- ===== Registration ===== -->
         <form
-          class="flex flex-col justify-around items-center h-full p-9 pl-px transition-transform"
+          class="flex flex-col justify-around items-center h-full p-8 transition-transform"
           action=""
           id="registration"
         >
@@ -149,7 +149,7 @@
           <div class="relative">
             <input
               id="username"
-              class="peer/username bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              class="peer/username bg-transparent p-2 border-b-2 w-60 border-sky-950 outline-none"
               type="text"
               required
             />
@@ -175,7 +175,7 @@
           <div class="relative">
             <input
               id="reg-email"
-              class="peer/email bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              class="peer/email bg-transparent p-2 border-b-2 border-sky-950 outline-none w-60"
               type="email"
               required
             />
@@ -203,7 +203,7 @@
           <div class="relative">
             <input
               id="reg-password"
-              class="peer/pass bg-transparent p-2 border-b-2 border-sky-950 outline-none"
+              class="peer/pass bg-transparent p-2 border-b-2 border-sky-950 outline-none w-60"
               type=""
               required
             />
